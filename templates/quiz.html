@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>General Quiz</h1>
+<h3>Multiple option questions carry 2 marks remaining questions carry 1 mark each.
+   Total:- 11marks
+</h3>
+<body>
+    <form action="" method="POST">{% csrf_token %}
+        1. Entomology is the science that studies<br>
+        <input type="radio" name="question1" value="Behavior of human beings">Behavior of human beings<br>
+        <input type="radio" name="question1" value="Insects">Insects<br>
+        <input type="radio" name="question1" value="diseases">diseases<br>
+        <input type="radio" name="question1" value="The formation of rocks">The formation of rocks<br><br>
+        2. Hitler party which came into power in 1933 is known as<br>
+        <input type="radio" name="question2" value="Labour Party">Labour Party<br>
+        <input type="radio" name="question2" value="Nazi Party">Nazi Party<br>
+        <input type="radio" name="question2" value="Ku-Klux-Klan">Ku-Klux-Klan<br>
+        <input type="radio" name="question2" value="Democratic Party">Democratic Party<br><br>
+        3. Write the answer of 2+4*6/2<br>
+        Your Answer:- <input type="text" name="question3"><br><br>
+        4. Pick the kings of Mughaul empire from the below options.(multiple option)<br>
+        <input type="checkbox" name="question4[]" value="jahangir">jahangir<br>
+        <input type="checkbox" name="question4[]" value="Akbar">Akbar<br>
+        <input type="checkbox" name="question4[]" value="Ashoka">Ashoka<br>
+        <input type="checkbox" name="question4[]" value="chandragupta maurya">chandragupta maurya<br><br>
+        5. Exposure to sunlight helps a person improve his health because<br>
+        <input type="radio" name="question5" value="the infrared light kills bacteria in the body">the infrared light kills bacteria in the body<br>
+        <input type="radio" name="question5" value="resistance power increases">resistance power increases<br>
+        <input type="radio" name="question5" value="the pigment cells in the skin get stimulated and produce a healthy tan">the pigment cells in the skin get stimulated and produce a healthy tan<br>
+        <input type="radio" name="question5" value="the ultraviolet rays convert skin oil into Vitamin D">the ultraviolet rays convert skin oil into Vitamin D<br><br>
+        6. Pick the synonyms of belief.(multiple option)<br>
+        <input type="checkbox" name="question6[]" value="conviction">conviction<br>
+        <input type="checkbox" name="question6[]" value="doubt">doubt<br>
+        <input type="checkbox" name="question6[]" value="trust">trust<br>
+        <input type="checkbox" name="question6[]" value="suspicion">suspicion<br><br>
+        7. Who among these are cricket players?(multiple option)<br>
+        <input type="checkbox" name="question7[]" value="kane williamson">kane williamson<br>
+        <input type="checkbox" name="question7[]" value="conway">conway<br>
+        <input type="checkbox" name="question7[]" value="ronaldo">ronaldo<br>
+        <input type="checkbox" name="question7[]" value="messi">messi<br><br>
+        8. In which year India got Independence?<br>
+        Your Answer:- <input type="text" name="question8"><br><br>
+        <input type="submit" value="Submit quiz">
+    </form>
+</body>
+</html>

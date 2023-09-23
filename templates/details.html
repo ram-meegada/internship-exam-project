@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style all input fields */
+h1{
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+ul{
+  position: relative;
+  background-color: red;
+  padding: 5px;
+  width: 250px;
+  margin: auto;
+}
+input {
+  display:block;
+  padding: 10px;
+  border: 1px solid #050505;
+  border-radius: 2px;
+  box-sizing:border-box;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  width: 150px;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color: #0ff707;
+  color: white;
+  padding: 8px;
+}
+/* Style the container for inputs */
+.container {
+  background-color: cyan;
+  padding: 20px;
+  width: 250px;
+  margin: auto;
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  background-color: lightpink
+}
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+a{ color:black;}
+</style>
+</head>
+<body bgcolor="lightblue">
+    <div class="container">
+        <h1>User Details</h1>
+        <form action="" method="POST">{% csrf_token %}<br>
+            <label for="username">username: </label>
+            <input type="text" id="username" name="username" required>
+            <label for="first_name">first_name: </label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="last_name">last_name: </label>
+            <input type="text" id="last_name" name="last_name">
+            <label for="email">email: </label>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Start Quiz">
+        </form>
+    </div><br>       
+</body>
+</html>
